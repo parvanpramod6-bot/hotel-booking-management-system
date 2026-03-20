@@ -5,9 +5,6 @@ import model.Reservation;
 import java.util.LinkedList;
 import java.util.Queue;
 
-/**
- * Handles booking requests using FIFO Queue
- */
 public class BookingRequestQueue {
 
     private Queue<Reservation> queue;
@@ -16,14 +13,12 @@ public class BookingRequestQueue {
         queue = new LinkedList<>();
     }
 
-    // Add request
     public void addRequest(Reservation reservation) {
         queue.offer(reservation);
         System.out.println("Request added:");
         reservation.display();
     }
 
-    // View all requests
     public void viewRequests() {
         System.out.println("\n--- Booking Queue ---");
 
@@ -35,5 +30,10 @@ public class BookingRequestQueue {
         for (Reservation r : queue) {
             r.display();
         }
+    }
+
+    // ✅ ADD THIS
+    public Queue<Reservation> getQueue() {
+        return queue;
     }
 }
