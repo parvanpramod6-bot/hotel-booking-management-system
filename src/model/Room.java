@@ -15,6 +15,11 @@ public abstract class Room {
         this.price = price;
     }
 
+    // ✅ ADD THIS METHOD
+    public String getType() {
+        return type;
+    }
+
     public void displayDetails() {
         System.out.println("Room Type: " + type);
         System.out.println("Beds: " + beds);
