@@ -11,7 +11,7 @@ package main;
  * and introduces core Java concepts such as class structure, static methods,
  * and console output.</p>
  *
- * @author Pavan
+ * @author Parvan
  * @version 1.0
  */
 public class UseCase1HotelBookingApp {
